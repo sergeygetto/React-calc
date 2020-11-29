@@ -1,4 +1,8 @@
-header{background: #487922;}
+header{background: #686b66;
+    min-height: 160px;
+    
+    padding: 30px 30px
+}
 
 .top-bar {
     padding:0px;
@@ -12,5 +16,11 @@ header{background: #487922;}
 
 .site-title {
     color: #fff;
+    padding-bottom: 10px;
 }
-
+.animate-dropdown{
+    color: #fff;
+    font-size: 20px;
+    float: right;
+    padding-right: 100px;
+}

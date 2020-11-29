@@ -14,11 +14,11 @@ class Nav extends React.Component {
         <div className="container">
             <nav>
                 <ul>
-                    <li><a href="/">Главная</a></li>
+                    <li><a href="/">EUR</a></li>
+                    <li><a href="/rub">RUB</a></li>
+                    <li><a href="/tictac">Крестики-нолики</a></li>
                     <li><a href="/about">О нас</a></li>
                     <li><a href="/contacts">Контакты</a></li>
-                    <li><a href="/tictac">Крестики-нолики</a></li>
-
                 </ul>
             </nav>
         </div>

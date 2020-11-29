@@ -13,15 +13,15 @@ class Footer extends React.Component {
         <div className="container">
             <div className="flex-container">
                 <div className="flex-item">
-                    <h1 className="footer-title"><a href="https://itgid.info">2020 &copy; React. Lite Level</a></h1>
+                    <h1 className="footer-title"><a href="https://www.ecb.europa.eu/home/html/index.en.html">2020 &copy; European Central Bank</a></h1>
                     <p> All Rights Reserved</p>
 
                 </div>
             <div className="flex-item">
                 <div className="module-body">
                     <ul className="list-unstyled">
-                        <li><a href="/sitemap/" tooltip="Карта сайта">Карта сайта</a></li>
-                        <li><a href="/sitemaps.xml" target="_blank" tooltip="Google Sitemap">Google Sitemap</a></li>
+                        <li><a href="/g" tooltip="Карта сайта">Карта сайта</a></li>
+                        <li><a href="/h" target="_blank" tooltip="Google Sitemap">Google Sitemap</a></li>
                     </ul>
                 </div>
             </div>

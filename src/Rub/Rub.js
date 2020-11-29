@@ -22,7 +22,7 @@ class Rub extends React.Component {
     <Router>
         <Switch>
     
-            <Route exact path='/' component={RateRub}></Route>
+            <Route exact path='/rub' component={RateRub}></Route>
             
 
         </Switch>

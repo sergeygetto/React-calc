@@ -1,6 +1,19 @@
 form {
 margin: 20px;
 }
+
 .submit{
+    padding: 7px;
+    background:  #2b5705;
+    color: #fff;
 margin-left: 20px;
+
+}
+.form{
+    padding: 5px;
+    margin-right: 10px;
+}
+.calcul{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 30px 30px
 }

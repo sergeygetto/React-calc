@@ -95,7 +95,8 @@ revClickX=()=>{
 
   render(){
   return (
-    <div className="App2">     
+    <div className="App2"> 
+    <h3 className='center'>Tic-Tac-Toe</h3>    
       <div className='xZero'>
         <div className='minXzero' onClick={this.gameProject} style={{display: this.state.display}} data='0'>{this.state.square[0]}</div>
         <div className='minXzero' onClick={this.gameProject} style={{display: this.state.display}} data='1'>{this.state.square[1]}</div>

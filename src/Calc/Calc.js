@@ -34,23 +34,23 @@ this.setState({result: cyrrentInp / this.state.rate[cyrrentOpt]})
 <div className='calcul'>
 <h3> Калькулятор обмена</h3>
         <div className="block">
-            {/* <div>Я хочу</div> */}
+            <div>Выберите валюту и ее количество:</div>
             <form onSubmit={this.rateSub}>
-                <input type="number" defaultValue="0" name='cyrrentInp'/>
-                <select name="cyrrentOpt" id="">
+                <input type="number" defaultValue="" name='cyrrentInp' className='form'/>
+                <select name="cyrrentOpt" className='form'>
                 {Object.keys(this.props.rate).map(elem =>{
                return <option key={elem} defaultValue="USD">{elem}</option>}
                )
                } 
                 </select>
-                <input  type='submit' className='submit'/>
+                <input  type='submit' className='submit' value="Расчитать"/>
                 </form>
             
             
             <div>
-                <h4>Результат</h4>
+                <h4>Результат:</h4>
                 <ul className="calc-res">
-                    <li>EUR {this.state.result}</li>
+                    <li> {this.state.result} у.е</li>
                     
                 </ul>
             </div>

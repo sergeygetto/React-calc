@@ -1,23 +1,23 @@
 import React from 'react';
-import './Rate.css';
+import './RateRub.css';
 import Calc from '../Calc/Calc'
 
 
-class Rate extends React.Component {
+class RateRub extends React.Component {
     constructor(props){
         super(props);
         this.state={
             'date':'',
             'currencyRate':{}
         }
-       this.rateArr =['USD','RUB','GBP','CZK','PLN'];
+       this.rateArr =['USD','EUR','GBP','CNY'];
        this.getRates()
 
 }
 
 
     getRates =()=>{
-        fetch('https://api.exchangeratesapi.io/latest?')
+        fetch('https://api.exchangeratesapi.io/latest?base=RUB')
             .then(data => {
                 return data.json()
             }) 
@@ -26,15 +26,12 @@ class Rate extends React.Component {
                 console.log(data)
             this.setState({date: data.date})
             let result = {};
-                // for(let i = 0; i < this.rateArr.length; i++){
-                // result[this.rateArr[i]] = data.rates[this.rateArr[i]]}
                 this.rateArr.forEach(elem =>{
                     result[elem] = data.rates[elem]
                 })
                 
-                // console.log(result);
                 this.setState({currencyRate: result})
-                
+                console.log(data.base)
             })
         }
     
@@ -42,14 +39,14 @@ class Rate extends React.Component {
 
 
   return (
-<div className='rate'>
-<h3> Курс валют на {this.state.date}</h3>
+<div className='rateRub'>
+<h3 className='center'> Курс валют на {this.state.date}</h3>
         <div className="flex-container">
             {Object.keys(this.state.currencyRate).map(elem =>{
                return <div className="block flex-item" key={elem}>
                 <div className="currency-name">{elem}</div>
                 <div className="currency-in">{this.state.currencyRate[elem]}*</div>
-                <p>* По отношению к 1 EUR</p>
+                <p>* По отношению к 1 RUB</p>
             </div>
             }) }
 
@@ -59,4 +56,4 @@ class Rate extends React.Component {
 );
 }
 }
-export default Rate;
+export default RateRub;

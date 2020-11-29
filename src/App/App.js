@@ -7,9 +7,8 @@ import Rate from '../Rate/Rate';
 import Contacts from '../Contacts/Contacts';
 import About from '../About/About';
 import TicTac from '../TicTac/TicTac';
-
-
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import RateRub from '../RateRub/RateRub';
 
 
 class App extends React.Component {
@@ -28,6 +27,8 @@ class App extends React.Component {
             <Route exact path='/contacts' component={Contacts}></Route>
             <Route exact path='/about' component={About}></Route>
             <Route exact path='/tictac' component={TicTac}></Route>
+            <Route exact path='/rub' component={RateRub}></Route>
+
 
         </Switch>
     </Router>
