@@ -1,0 +1,39 @@
+
+.App2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .xZero{
+    border: 2px solid black;
+    width: 270px;
+    height: 270px;
+    margin: 50px;
+  }
+  .minXzero{
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 90px;
+    height: 90px;
+    float: left;
+    font-size: 50px;
+    background: maroon;
+    color: aquamarine;
+  }
+  .button{
+    position: relative;
+    background: red;
+     top: -300px;
+    /* right: -100px; */
+    padding: 10px;
+    margin: 2px; 
+  }
+  .results{
+    display: none;
+  }
+  .button:hover{
+    background: lightseagreen;
+    cursor: pointer;
+    
+  }
+  
+    
